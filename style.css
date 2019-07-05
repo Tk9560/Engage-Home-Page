@@ -1,0 +1,728 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", arial;
+  background-color: #eee;
+}
+
+.container {
+  width: 90% !important;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+/*********** Icons Section ***********/
+
+.icons {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  padding: 8px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #fff;
+  z-index: 100000;
+}
+
+.icons ul {
+  list-style: none;
+}
+
+.icons li {
+  padding: 5px 0;
+}
+
+.icons a {
+  color: #555;
+  font-size: 18px;
+}
+
+.icons a:hover {
+  color: #218fe6;
+}
+
+.icon-texts {
+  position: absolute;
+  top: 35%;
+  right: 4rem;
+}
+
+.icon-text {
+  color: #555;
+  background-color: #fff;
+  list-style: none;
+  margin: 5px 0;
+  padding: 2px 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.icon-text span {
+  word-spacing: 2px;
+}
+
+.down-top a {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  background-color: transparent;
+  border: 2px solid #999;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px 13px;
+  color: #eee;
+  z-index: 100000;
+}
+/*********** Header Section ***********/
+
+.header {
+  width: 100%;
+  background-image: url("img/business-2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 820px;
+}
+
+.div-overlay {
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 60px;
+  background-color: rgba(75, 75, 75, 1);
+  z-index: 100000;
+}
+
+.nav-logo {
+  float: left;
+  padding-top: 20px;
+}
+
+.nav-logo img {
+  width: 50%;
+}
+
+.nav-links {
+  float: right;
+}
+
+.nav-links ul {
+  list-style: none;
+  overflow: auto;
+}
+
+.nav-links ul li {
+  float: left;
+  margin: 0 15px;
+  padding-top: 25px;
+}
+
+.nav-links ul li:first-child {
+  position: relative;
+}
+
+.nav-links ul li:first-child::after {
+  content: "";
+  width: 130%;
+  height: 2px;
+  background-color: #4caf50;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links ul li:last-child a {
+  color: #444;
+  background-color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  bottom: 7.5px;
+}
+
+.nav-links li:last-child a:hover {
+  background-color: #4caf50;
+  transition: 0.3s all;
+}
+
+.clr {
+  clear: both !important;
+}
+
+.header-about {
+  margin-top: 15rem;
+  text-align: center;
+  color: #fff;
+}
+
+.header-about * {
+  padding: 20px;
+}
+
+.header-about p {
+  line-height: 1.3em;
+}
+
+.header-about p:first-child {
+  font-size: 20px;
+}
+
+.header-about p:nth-child(2) {
+  width: 80%;
+  margin: auto;
+  font-size: 50px;
+}
+
+.header-about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  background-color: #4caf50;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.header-about a:hover {
+  color: #444;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+/*********** Features Section ***********/
+
+.features {
+  width: 100%;
+  padding: 100px 0;
+  overflow: auto;
+  height: 100%;
+}
+
+.feature {
+  width: 33.3%;
+  float: left;
+  position: relative;
+}
+
+.feature-icon {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 28px;
+  color: #4caf50;
+}
+
+.feature-desc {
+  margin-left: 50px;
+}
+
+.feature-desc h5 {
+  color: #303030;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.feature-desc p {
+  color: #888;
+  width: 75%;
+}
+
+/*********** Services Section ***********/
+
+.services-section {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.services-title h2,
+.services-title h3 {
+  padding: 20px 0;
+}
+
+.services-title h2,
+.other-title h2,
+.contact h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.services-title h3,
+.other-service h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.services {
+  width: 100%;
+  overflow: auto;
+}
+
+.service {
+  width: 30.3%;
+  float: left;
+  margin: 0 10px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.service img {
+  width: 100%;
+}
+
+.service-desc {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.service-desc * {
+  line-height: 1.8;
+}
+
+.service-desc h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.service-desc p {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.service-desc a {
+  text-decoration: none;
+  color: #555;
+}
+
+.service-desc a:hover i,
+.service-desc a:hover span {
+  color: #4caf50;
+}
+
+.service-desc i {
+  display: inline-block;
+  margin-left: 5px;
+  color: #666;
+}
+
+.service-desc a:hover i {
+  /*color: #4caf50;*/
+  transform: translate(5px, 0);
+  transition: all 0.5s;
+}
+
+/*********** Secret Section ***********/
+
+.secret-section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.secret {
+  width: 50%;
+  float: left;
+}
+
+.secret h2 {
+  margin-top: 50px;
+}
+
+.secret h2,
+.secret p,
+.secret ul {
+  padding: 20px 25px;
+}
+
+.secret h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.secret ul {
+  list-style: none;
+}
+
+.secret ul li span {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.secret a,
+.contact-button a {
+  display: inline-block;
+  margin-left: 28px;
+  background-color: #4caf50;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secret-img {
+  width: 50%;
+  float: left;
+}
+
+.secret-img img {
+  width: 100%;
+}
+
+/*********** Comments Section ***********/
+
+.comments-section {
+  width: 100%;
+  padding: 80px 0 70px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.comment-icon {
+  text-align: center;
+  padding: 40px 0;
+}
+.comment-icon i {
+  color: #4caf50;
+  font-size: 40px;
+}
+
+.comments {
+  overflow: auto;
+}
+
+.comment {
+  width: 31.33%;
+  float: left;
+  margin: 0 10px;
+}
+
+.comment p {
+  width: 90%;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 25px;
+  color: #555;
+}
+
+.comment-caption {
+  margin: 20px 0 0 20px;
+}
+
+.comment-caption div {
+  padding: 5px 0;
+}
+
+.comment-author {
+  color: #555;
+}
+
+.comment-position {
+  opacity: 0.7;
+}
+
+.arrows {
+  text-align: center;
+}
+
+.prev,
+.after {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 1.8rem;
+  color: #888;
+}
+
+/*********** Details Section ***********/
+
+.details-section {
+  width: 100%;
+  padding: 80px;
+}
+
+.details {
+  width: 100%;
+}
+
+.detail {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.detail * {
+  display: block;
+  padding: 10px 0;
+}
+
+.detail i {
+  font-size: 2.5rem;
+  color: #8f8f8f;
+}
+
+.detail-count {
+  font-size: 3rem;
+}
+
+.detail-caption {
+  font-size: 1.2rem;
+}
+
+/*********** Additional Value Section ***********/
+
+.add-value {
+  width: 100%;
+  height: 450px;
+  background-image: url("img/download.jpg");
+  background-size: 100% 100%;
+  background-repeat: none;
+  text-align: center;
+}
+
+.add-value * {
+  padding: 15px 0;
+}
+
+.add-value h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+  margin-top: 85px;
+}
+
+.add-value p {
+  width: 55%;
+  margin: 0 auto 8px;
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.add-value a {
+  background-color: #4caf50;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 18px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.other {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*********** Other Services Section ***********/
+
+.other-services-section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.other-services-section * {
+  padding: 15px 0;
+}
+
+.other-services {
+  width: 100%;
+  overflow: auto;
+}
+
+.other-service {
+  width: 31.3%;
+  float: left;
+  margin: 0 10px;
+}
+
+.other-title {
+  width: 100%;
+  text-align: center;
+}
+
+.other-services p {
+  width: 100%;
+
+  line-height: 1.86rem;
+  color: rgb(104, 104, 104);
+}
+
+/*********** Partners Section ***********/
+
+.partners {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.partners img {
+  display: inline-block !important;
+  width: 14%;
+  margin: 0 1.9rem;
+  opacity: 0.7;
+}
+
+.partners img:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+/*********** Partners Section ***********/
+
+.contact {
+  width: 100%;
+  overflow: auto;
+  background-color: #4caf50;
+  padding: 80px 0;
+}
+
+.contact-title {
+  width: 50%;
+  float: left;
+}
+
+.contact-title h2 {
+  color: #fff;
+}
+
+.contact-title p {
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.contact-button {
+  width: 50%;
+  float: left;
+  text-align: right;
+  height: 100%;
+}
+
+.contact-button a {
+  margin-top: 15px;
+  background-color: #fff;
+  color: #000;
+  padding: 25px 21px;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.contact-button a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/*********** Footer Section ***********/
+
+.footer-main {
+  width: 100%;
+  overflow: auto;
+  padding: 40px 0;
+  background-color: #1f2021;
+  color: #fff;
+}
+
+.footer-section {
+  width: 24%;
+  float: left;
+  margin-left: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  color: #58606b;
+}
+
+.footer-section a,
+.footer-section span {
+  text-decoration: none;
+  color: #58606b;
+  font-size: 14px;
+}
+
+.footer-section i {
+  margin-right: 10px;
+}
+
+.footer-section * {
+  padding-top: 8px;
+}
+
+.about-us p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.first-li {
+  overflow: auto;
+}
+
+#first-li p {
+  float: right;
+  width: 91%;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  overflow: auto;
+  width: 100%;
+  background-color: #191919;
+  color: #58606b;
+}
+
+.copyrights {
+  width: 50%;
+  float: left;
+}
+
+.copyrights span {
+  font-size: 14px;
+}
+
+.footer-icons {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.footer-icons i {
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #58606b;
+}
